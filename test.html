@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<style type="text/css">
+.a img{
+transform:scale(0.8); /*Opera scale version*/
+transition-duration: 0.5s; /*Webkit: Animation duration*/
+}
+.a img:hover{
+transform:scale(2.0);
+
+}
+</style>
+<script type="text/javascript">
+function myClick(){
+	var x = confirm("Xác nhận mua mặt hàng này");
+	if(x){
+	alert("Cảm ơn bạn tin tưởng sản phẩm của chúng tôi");
+}else{
+ alert("Mời bạn quay lại tham khảo sản phẩm khác");	
+}
+}
+</script>
+</head>
+
+<body>
+
+<input type="button" onclick="myClick()" value="Mua hàng" />
+</body>
+</html>
